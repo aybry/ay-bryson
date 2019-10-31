@@ -1,0 +1,27 @@
+.page-content {
+    width: 70%;
+    min-width: 700px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-message {
+    width: 70%;
+    background-color: bisque;
+}
+
+.rsvp-form {
+    margin: 20px auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 15px;
+}
+
+.rsvp-label {
+    grid-column: 1 / 2;
+}
+
+.rsvp-input, .rsvp-button {
+    grid-column: 2 / 3;
+}
