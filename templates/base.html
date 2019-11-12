@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <head>
     <title>Ay-Bryson</title>
-
+    
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
 </head>
 <body>
-    <div class="page-content">
-        Hello, Dickilein! Will you be coming to our wedding on 22 August 2020?
-
-        <div class="form-message">
-            {% if msg %}
-                {{ msg }}
-            {% endif %}
+    <div id="main-left">
+        <div class="photo-frame">
+            <img src="{{ url_for('static', filename='photos/DSC_0326.JPG') }}">
         </div>
+        <div class="text-over-photo">
+            <div class="title">Destina & Sam</div>
+            <div class="content">want to celebrate with you</div>
+            <!-- <div class="content">are getting married</div> -->
+        </div>
+    </div>
+    <div id="main-right">
+        <div class="top-panel">
+            <img id="invitation-img" src="{{ url_for('static', filename='photos/invitation.png') }}">
+            <div class="centered-textbox">
+                <div class="location-title">
+                    Berlin, Germany
+                </div>
+                <div class="date">
+                    Saturday, 22 August 2020
+                </div>
+                <div>
+                    <button id="open-rsvp-button" onclick="window.location.href = '/rsvp'">RSVP Here</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="separator"></div> -->
+
+        <div class="wedding-details right-panel">
+            <div class="header2 font-sacramento">Schedule</div>
+            Coming soon...
+
+
+            <!-- <div class="schedule-item">
+                08:00 Wake up
+            </div>
+            <div class="schedule-item">
+                08:15 Eat breakfast
+            </div> -->
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="schedule right-panel">
+            <div class="header2 font-sacramento">Contact</div>
+
+            Contact us at: ay-bryson@posteo.net
             
-        <form class="rsvp-form" method="POST">
-            <label for="name" class="rsvp-label">Name</label>
-            <input id="name" class="rsvp-input" type="text" name="name">
-            <label for="email" class="rsvp-label">Email Address</label>
-            <input id="email" class="rsvp-input" type="text" name="email">
-            <label for="attending-yes" class="rsvp-label">I will be attending</label>
-            <input id="attending-yes" class="rsvp-input" type="radio" name="attending" value="1">
-            <label for="attending-no" class="rsvp-label">I will not be attending</label>
-            <input id="attending-no" class="rsvp-input" type="radio" name="attending" value="0">
-            <label for="attendees" class="rsvp-label">Number of guests</label>
-            <input id="attendees" class="rsvp-input" name="attendees" type="number">
-            <label for="message" class="rsvp-label">Message (optional)</label>
-            <input id="message" class="rsvp-input" type="text" name="message">
-            <button type="submit" class="rsvp-button">Submit</button>
-        </form>
+        </div>
     </div>
 </body>

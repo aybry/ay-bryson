@@ -1,3 +1,133 @@
+body {
+    font-family: raleway-regular;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#main-left {
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+}
+
+#main-left .photo-frame {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main-left .photo-frame img {
+    image-orientation: from-image;
+    max-height: 100%;
+    /* max-width: 100%; */
+    /* width: auto; */
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+#main-left .text-over-photo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: 10%;
+    max-width: 50%;
+    z-index: 10;
+    color: white;
+}
+
+.text-over-photo .title {
+    font-family: sacramento;
+    /* font-weight: bold; */
+    font-size: 60px;
+}
+
+.text-over-photo .content {
+    font-size: 30px;
+}
+
+.location-title {
+    font-family: sacramento;
+    font-size: 60px;
+}
+    
+#main-right {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    font-size: 25px;
+}
+
+#main-right .font-sacramento {
+    font-family: sacramento;
+}
+
+.header2 {
+    text-align: center;
+    font-size: 70px;
+}
+
+#invitation-img {
+    width: 100%;
+    height: 100%;
+}
+
+#main-right .right-panel {
+    display: flex;
+    flex-direction: column;
+    padding: 8% 5%;
+    min-height: 100%;
+}
+
+#main-right .centered-textbox {
+    position: absolute;
+    top: 40%;
+    /* margin: 0 20%; */
+    left: 10%;
+
+    text-align: center;
+    height: 20%;
+    width: 80%;
+    margin: auto;
+}
+/* 
+#main-right .centered-textbox .date {
+    font-size: 30px;
+} */
+    
+#main-right .top-panel {
+    height: 100%
+    /* background-color: rgb(224, 131, 55); */
+    /* background-color: rgb(255, 196, 196); */
+}
+
+#main-right .wedding-details {
+    /* font-family: white_angelica; */
+    font-size: 30px;
+    margin: auto;
+}
+
+#main-right .schedule {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-right div.separator {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(170, 170, 170);
+}
+
 .page-content {
     width: 70%;
     min-width: 700px;
@@ -18,10 +148,41 @@
     grid-gap: 15px;
 }
 
+#open-rsvp-button {
+    font-family: raleway-regular;
+    font-size: 20px;
+    color: black;
+    margin-top: 50px;
+    padding: 15px;
+    width: 60%;
+    height: 100%;
+    background-color: ivory;
+    border-radius: 4px;
+    border: 1px solid rgb(61, 61, 61)
+}
+
+#open-rsvp-button:hover {
+    border: 2px solid rgb(61, 61, 61);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
 .rsvp-label {
     grid-column: 1 / 2;
 }
 
-.rsvp-input, .rsvp-button {
+.rsvp-input, .send-rsvp-button {
     grid-column: 2 / 3;
+}
+
+
+/* Fonts */
+@font-face {
+    font-family: raleway-regular;
+    src: url('/static/fonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: sacramento;
+    src: url('/static/fonts/sacramento.ttf');
 }
