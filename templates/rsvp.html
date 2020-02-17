@@ -2,25 +2,44 @@
 <head>
     <title>RSVP</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='lib/jquery.min.js') }}"></script>
 
 </head>
-<body>
-    Hello, Dickilein! Will you be coming to our wedding on 22 August 2020?
+<body id="rsvp-main">
+    {% include 'language.html' %}
+    <div>
+        <div class="rsvp-centered">
+            <div class="rsvp-details">
+                <span class="rsvp-header font-parisienne">
+                    Destina & Sam
+                </span><br>
+                <p class="rsvp-body" id="rsvp-location">
+                    Berlin, Germany
+                </p><p id="rsvp-date">
+                    Saturday, 22 August 2020
+                </p>
+            </div>
+            <div class="rsvp-form-container">
+                <form class="rsvp-form" id="rsvp-form" method="POST">
+                    <input id="name" class="rsvp-input" type="text" name="name" placeholder="Name(s)" required>
+                    <input id="email" class="rsvp-input" type="text" name="email" placeholder="Email address" required>
+                    <button id="rsvp-radio-yes" value="1" class="rsvp-button" type="button" onclick="radioToggleRSVP(this.value);">Attending</button>
+                    <button id="rsvp-radio-no" value="0" class="rsvp-button" type="button" onclick="radioToggleRSVP(this.value);">Unable to attend</button>
+                    <input id="attendees" class="rsvp-input" name="attendees" type="hidden" min="0" max="10" placeholder="Number attending">
+                    <textarea id="rsvp-response" name="attending" hidden></textarea>
+                    <textarea id="message" class="rsvp-input" type="text" name="message" placeholder="Message (optional)"></textarea>
+                    <button id="rsvp-submit" type="submit" class="send-rsvp-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-    <form class="rsvp-form" method="POST">
-        <label for="name" class="rsvp-label">Name</label>
-        <input id="name" class="rsvp-input" type="text" name="name">
-        <label for="email" class="rsvp-label">Email Address</label>
-        <input id="email" class="rsvp-input" type="text" name="email">
-        <label for="attending-yes" class="rsvp-label">I will be attending</label>
-        <input id="attending-yes" class="rsvp-input" type="radio" name="attending" value="1">
-        <label for="attending-no" class="rsvp-label">I will not be attending</label>
-        <input id="attending-no" class="rsvp-input" type="radio" name="attending" value="0">
-        <label for="attendees" class="rsvp-label">Number of guests</label>
-        <input id="attendees" class="rsvp-input" name="attendees" type="number">
-        <label for="message" class="rsvp-label">Message (optional)</label>
-        <input id="message" class="rsvp-input" type="text" name="message">
-        <button type="submit" class="send-rsvp-button">Submit</button>
-    </form>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/rsvp.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/i18n.js') }}"></script>
+    <script>
+        const LOC = {{ loc| tojson }};
+        setLanguage('{{ lang }}');
+    </script>
+
 </body>

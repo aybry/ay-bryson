@@ -1,0 +1,71 @@
+subheader-celebrate
+en:are getting married
+de:heiraten
+
+header-location
+en:Berlin, Germany
+de:Berlin, Deutschland
+
+subheader-date
+en:Saturday, 22 August 2020
+de:Samstag, 22. August 2020
+
+open-rsvp-button
+en:RSVP Here
+de:Zu- oder absagen
+
+header-schedule
+en:Schedule
+de:Ablauf
+
+p-excited
+en:We are very excited to celebrate our wedding with you!
+de:Wir freuen uns riesig, unsere Hochzeit gemeinsam mit euch zu feiern! 
+
+p-appreciate
+en:We would very much appreciate it if you could let us know whether you can make it by the end of February 2020. All other information, such as time and place, will appear here after that date.
+de:Wir bitten um eine Zu- oder Absage bis zum 29. Februar 2020. Alle Details zum Ablauf, wie Zeit und Ort, werden wir nach diesem Datum hier bekanntgeben. 
+
+header-touch
+en:Get in Touch
+de:Kontaktiert uns
+
+p-contact
+en:Contact us at:
+de:Kontakt:
+
+rsvp-location
+en:Berlin, Germany
+de:Berlin, Deutschland
+
+rsvp-date
+en:Saturday, 22 August 2020
+de:Samstag, 22. August 2020
+
+name::placeholder
+en:Name(s)
+de:Name(n)
+
+email::placeholder
+en:Email address
+de:Emailadresse 
+
+rsvp-radio-yes
+en:Attending
+de:Zusagen
+
+rsvp-radio-no
+en:Unable to attend
+de:Absagen
+
+attendees::placeholder
+en:Number attending
+de:Anzahl Gäste
+
+message::placeholder
+en:Message (optional)
+de:Nachricht (optional)
+
+rsvp-submit
+en:Submit
+de:Absenden

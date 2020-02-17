@@ -1,0 +1,19 @@
+<div id="carousel-container">
+
+    {% for url in static_photo_urls %}
+        <div class="photo_carousel_img fade">
+            <img src="{{ url }}">
+        </div>
+    {% endfor %}
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<div class="dot-container">
+    {% for url in static_photo_urls %}
+        <span class="dot" onclick="currentSlide({{ loop.index }});"></span>
+    {% endfor %}
+</div> 

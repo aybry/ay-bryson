@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <head>
-    <title>Ay-Bryson</title>
-    
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>The Ay-Bryson Wedding</title>
 
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <script src="{{ url_for('static', filename='lib/jquery.min.js') }}"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='carousel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icons/microns.css') }}">
 </head>
 <body>
     <div id="main-left">
-        <div class="photo-frame">
-            <img src="{{ url_for('static', filename='photos/DSC_0326.JPG') }}">
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div id="flash-container" class="flash">
+            {% for category, message in messages %}
+            <span class="{{ category }}"></span><br>
+            <span>{{ message }}</span>
+            {% endfor %}
+            <br>
+            <button id="close-message-btn" type="button" onclick="$('#flash-container').hide();">OK</button>
         </div>
-        <div class="text-over-photo">
-            <div class="title">Destina & Sam</div>
-            <div class="content">want to celebrate with you</div>
-            <!-- <div class="content">are getting married</div> -->
+        {% endif %}
+        {% endwith %}
+
+        <div class="photo-frame">
+            {% include 'carousel.html' %}
+                <!-- <img src="{{ url_for('static', filename='photos/DSC_0326.JPG') }}"> -->
+        </div>
+        <div class="text-over-photo-container">
+            <div class="text-over-photo">
+                <div class="names font-parisienne">Destina & Sam</div>
+                <div class="content" id="subheader-celebrate">are getting married</div>
+            </div>
         </div>
     </div>
     <div id="main-right">
+        {% include 'language.html' %}
         <div class="top-panel">
-            <img id="invitation-img" src="{{ url_for('static', filename='photos/invitation.png') }}">
+            <img id="invitation-img" src="{{ url_for('static', filename='img/invitation.jpg') }}">
             <div class="centered-textbox">
-                <div class="location-title">
+                <div class="location-title font-parisienne" id="header-location">
                     Berlin, Germany
                 </div>
-                <div class="date">
+                <div class="date" id="subheader-date">
                     Saturday, 22 August 2020
                 </div>
-                <div>
+                <div class="rsvp-button-container">
                     <button id="open-rsvp-button" onclick="window.location.href = '/rsvp'">RSVP Here</button>
                 </div>
             </div>
@@ -35,26 +55,48 @@
 
         <!-- <div class="separator"></div> -->
 
-        <div class="wedding-details right-panel">
-            <div class="header2 font-sacramento">Schedule</div>
-            Coming soon...
+        <div class="right-panel">
+            <div class="main-header font-parisienne" id="header-schedule">Schedule</div>
+                <p id="p-excited">
+                    We are very excited to celebrate our wedding with you!
+                </p>
+                <p id="p-appreciate">
+                    We would very much appreciate it if you could let us know, by the end of February 2020, whether or not you can make it. All other information, such as time and place, will appear here after that date.
+                </p>
+<!--
+    TODO:
+    # photos
+    # font
+    # RSVP
+    # German
+    # mobile-friendly
 
+    - hamburger?
+ -->
 
-            <!-- <div class="schedule-item">
-                08:00 Wake up
-            </div>
-            <div class="schedule-item">
-                08:15 Eat breakfast
-            </div> -->
         </div>
 
         <div class="separator"></div>
 
-        <div class="schedule right-panel">
-            <div class="header2 font-sacramento">Contact</div>
+        <div class="right-panel">
+            <div class="main-header font-parisienne" id="header-touch">Get in Touch</div>
 
-            Contact us at: ay-bryson@posteo.net
-            
+            <p class="centered" id="p-contact">
+                Contact us at:
+            </p>
+            <span class="centered">
+                ay-bryson@posteo.net
+            </span>
         </div>
+
     </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/tools.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/i18n.js') }}"></script>
+    <script>
+        const LOC = {{ loc|tojson }};
+        setLanguage('{{ lang }}');
+    </script>
+
 </body>

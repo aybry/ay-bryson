@@ -1,0 +1,119 @@
+
+.photo_carousel_img {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px 24px;
+    margin: 0 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 4.3rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 1000;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    margin: 0 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 100;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.dot-container {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 3%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 100;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+}
+
+/* Smartphones ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    .prev, .next {
+        margin: 0 8px;
+        border-radius: 5px;
+    }
+
+    .dot {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+/* iPads ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .prev, .next {
+        font-size: 4rem;
+        margin: 0 8px;
+        border-radius: 5px;
+    }
+
+    .dot {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+
+/* Medium and large screens ----------- */
+@media only screen and (min-width: 1024px) {
+    .prev, .next {
+        font-size: 30px;
+        margin: 0 8px;
+        border-radius: 5px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.575);
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+    }
+}
