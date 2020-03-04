@@ -794,21 +794,17 @@ and (min-device-width: 1536px) {
 
     #main-left .text-over-photo-container {
         position: absolute;
-        margin-left: 0;
-        /* top: -42rem; */
-        left: 50%;
-        bottom: -10vw;
-        height: 30vw;
+        bottom: 10%;
         width: 60vw;
         z-index: 0;
     }
 
     #main-left .text-over-photo {
         bottom: 30%;
-        margin-right: 50%;
+        width: 100%;
+        left: initial;
+        margin-left: initial;
         height: auto;
-        /* width: 50vw; */
-        max-width: max-content;
     }
 
     .text-over-photo .content {
