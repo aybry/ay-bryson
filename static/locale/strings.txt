@@ -23,8 +23,8 @@ en:We are very excited to celebrate our wedding with you!
 de:Wir freuen uns riesig, unsere Hochzeit gemeinsam mit euch zu feiern! 
 
 p-appreciate
-en:We would very much appreciate it if you could let us know whether you can make it by the end of February 2020. All other information, such as time and place, will appear here after that date.
-de:Wir bitten um eine Zu- oder Absage bis zum 29. Februar 2020. Alle Details zum Ablauf, wie Zeit und Ort, werden wir nach diesem Datum hier bekanntgeben. 
+en:We would very much appreciate it if you could let us know, by 22 May 2020, whether you can make it. All other information, such as time and place, will appear here after that date.
+de:Wir bitten um eine Zu- oder Absage bis zum 22. Mai 2020. Alle Details zum Ablauf, wie Zeit und Ort, werden wir nach diesem Datum hier bekanntgeben. 
 
 header-touch
 en:Get in Touch

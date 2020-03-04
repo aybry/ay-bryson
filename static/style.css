@@ -1,6 +1,6 @@
 html {
-    font-family: sourcesans;
-    font-size: 80%;
+    font-family: rosario;
+    font-size: 70%;
 }
 
 body {
@@ -9,6 +9,11 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+a {
+    color: rgba(202, 144, 128, 1);
+    text-decoration: none;
 }
 
 #main-left {
@@ -77,22 +82,48 @@ body {
 
 #main-right .top-panel {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     margin-left: -8px;
 }
 
 #invitation-img {
     min-width: 320px;
+    min-height: 600px;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
+
+#details-cont {
+    display: none;
+    cursor: pointer;
+}
+
+#details-arrow-down {
+    display: none;
+}
+
+#details-arrow-down-white {
+    margin-top: 50px;
+    position: relative;
+    width: 6rem;
+    height: 2rem;
+    -webkit-animation: bounce 3s infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%          { bottom: 8px; }
+    40%, 60%    { bottom: 8px; }
+    50%, 70%    { bottom: -8px; }
+    100%        { bottom: 8px; }
+
+  }
 
 #main-right .right-panel {
     display: flex;
     flex-direction: column;
-    font-family: sourcesans;
-    padding: 8rem 6rem;
+    font-family: rosario;
+    padding: 12rem 9rem;
     min-height: 70vh;
 }
 
@@ -110,8 +141,12 @@ body {
     font-size: 4rem;
 }
 
-.font-parisienne {
-    font-family: parisienne;
+.font-josefin-sans {
+    font-family: josefin-sans;
+}
+
+.font-sophbel {
+    font-family: sophia-bella;
 }
 
 #main-right div.separator {
@@ -121,7 +156,7 @@ body {
 }
 
 #open-rsvp-button {
-    font-family: sourcesans;
+    font-family: rosario;
     font-size: 3.2rem;
     margin-top: 50px;
     padding: 1.5rem;
@@ -130,13 +165,13 @@ body {
     width: 40%;
     height: 8rem;
     background-color: ivory;
+    /* color: white; */
     border-radius: 2.5rem;
-    border: 1px solid rgb(61, 61, 61)
+    /* border: 1px solid rgb(61, 61, 61) */
 }
 
 #open-rsvp-button:hover {
     border: 2px solid rgb(61, 61, 61);
-    background-color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -163,8 +198,28 @@ body {
     color: rgb(184, 137, 123);
 }
 
+.one-off-sep {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+#maps-iframe {
+    width: 90vw; 
+    height: 60vw;
+    max-width: 100%;
+}
+
+p.address {
+    margin: 0;
+}
+
+#more-questions {
+    text-align: center;
+}
+
 #close-message-btn {
-    font-family: sourcesans;
+    font-family: rosario;
     margin-top: 2rem;
     width: 10rem;
     height: 6rem;
@@ -176,6 +231,25 @@ body {
 
 #close-message-btn:hover {
     cursor: pointer;
+}
+
+.faq-ol {
+    list-style-position: outside;
+}
+
+ul.pub-tran {
+    margin-top: 0;
+    list-style-type: square;
+}
+
+.faq-question {
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0.5em;
+}
+
+.faq-answer {
+    margin: 8px 1rem 30px;
 }
 
 #rsvp-main {
@@ -230,15 +304,15 @@ body {
     display: block;
     padding: 2rem 3rem;
     font-size: 3rem;
-    font-family: sourcesans;
-    margin: 10px 5%;
+    font-family: rosario;
+    margin: 8px 5%;
     width: 90%;
     height: 10rem;
     color: rgb(51, 51, 51);
 }
 
 .rsvp-form button {
-    font-family: sourcesans;
+    font-family: rosario;
 }
 
 .rsvp-form .rsvp-button {
@@ -261,9 +335,9 @@ body {
 }
 
 .rsvp-form textarea {
-    margin: 10px 5%;
+    margin: 8px 5%;
     border: 1px solid rgb(184, 184, 184);
-    font-family: sourcesans;
+    font-family: rosario;
     padding: 2rem 3rem;
     font-size: 3rem;
     width: 90%;
@@ -282,6 +356,27 @@ body {
 
 button {
     color: rgb(27, 27, 27)
+}
+
+.btc-main {
+    position: relative;
+    top: 10vh;
+    text-align: center;
+}
+
+.btc-main h1 {
+    font-size: 4rem;
+}
+
+.btc-main h2 {
+    font-size: 2rem;
+}
+
+#btc-png {
+    margin-top: 10vh;
+    width: 50vw;
+    min-width: 100px;
+    max-width: 700px;
 }
 
 /* Smartphones ----------- */
@@ -303,7 +398,7 @@ and (max-device-width: 480px) {
 
     #main-right .right-panel {
         font-size: 3.5rem;
-        padding: 12rem 8rem;
+        padding: 15rem 12rem;
     }
 
     .main-header {
@@ -317,6 +412,11 @@ and (max-device-width: 480px) {
 and (min-device-width: 768px)
 and (max-device-width: 1023px) {
 
+    html {
+        font-family: rosario;
+        font-size: 70%;
+    }    
+
     .text-over-photo .names {
         font-size: 4rem;
     }
@@ -326,18 +426,25 @@ and (max-device-width: 1023px) {
     }
 
     .location-title {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     #lang-flag {
-        height: 1.5rem;
-        width: 3rem;
+        height: 2.5rem;
+        width: 5rem;
         margin: 0.8rem;
+    }
+
+    #main-right .top-panel {
+        width: 100vw;
+        height: 90vh;
+        position: relative;
+        margin-left: -8px;
     }
 
     #main-right .right-panel {
         font-size: 2rem;
-        padding: 12rem 8rem;
+        padding: 15rem 15rem;
     }
 
     #main-right .centered-textbox {
@@ -353,7 +460,6 @@ and (max-device-width: 1023px) {
         text-align: center;
         font-size: 6rem;
     }
-
     .flash {
         top: 24vh;
         width: 64vw;
@@ -404,8 +510,8 @@ and (max-device-width: 1023px) {
     .rsvp-form input[type="text"], .rsvp-form input[type="number"] {
         padding: 0.5rem 1rem;
         font-size: 1.5rem;
-        font-family: sourcesans;
-        margin: 10px auto;
+        font-family: rosario;
+        margin: 8px auto;
         width: 80%;
         height: 4rem;
         color: rgb(51, 51, 51);
@@ -414,7 +520,7 @@ and (max-device-width: 1023px) {
     .rsvp-form .rsvp-button {
         padding: 0 1rem;
         font-size: 1.5em;
-        border-radius: 1rem;
+        border-radius: 3px;
         height: 3.5rem;
         width: 50%;
         margin: 5px auto;
@@ -426,7 +532,7 @@ and (max-device-width: 1023px) {
     }
 
     .rsvp-form textarea {
-        margin: 10px auto;
+        margin: 8px auto;
         padding: 0.5rem 1rem;
         font-size: 1.5rem;
         width: 80%;
@@ -516,6 +622,7 @@ and (max-device-width: 1535px) {
 
     #main-right .top-panel {
         width: 100%;
+        height: 100vh;
         top: 0;
         margin-left: 0;
     }
@@ -532,9 +639,32 @@ and (max-device-width: 1535px) {
         background-color: black;
     }
 
+    #maps-iframe {
+        width: 600px; 
+        height: 400px;
+    }
+
     #invitation-img {
         width: 100%;
         height: 100%;
+    }
+
+    #details-cont {
+        display: initial;
+        cursor: pointer;
+    }
+    
+    #details-arrow-down {
+        display: initial;
+        position: relative;
+        margin: 0 auto;
+        width: 65px;
+        height: 15px;
+        -webkit-animation: bounce 3s infinite;
+    }
+
+    #details-arrow-down-white {
+        display: none;
     }
 
     #main-right div.separator {
@@ -552,7 +682,6 @@ and (max-device-width: 1535px) {
         font-size: 1.7rem;
         margin-top: 0;
         width: 30%;
-        background-color: ivory;
         border-radius: 1rem;
         border: 1px solid rgb(61, 61, 61)
     }
@@ -603,8 +732,8 @@ and (max-device-width: 1535px) {
     .rsvp-form input[type="text"], .rsvp-form input[type="number"] {
         padding: 0.5rem 1rem;
         font-size: 1.5rem;
-        font-family: sourcesans;
-        margin: 10px auto;
+        font-family: rosario;
+        margin: 8px auto;
         width: 80%;
         height: 4rem;
         color: rgb(51, 51, 51);
@@ -625,7 +754,7 @@ and (max-device-width: 1535px) {
     }
 
     .rsvp-form textarea {
-        margin: 10px auto;
+        margin: 8px auto;
         padding: 0.5rem 1rem;
         font-size: 1.5rem;
         width: 80%;
@@ -646,6 +775,8 @@ and (max-device-width: 1535px) {
         text-align: center;
         font-size: 4rem;
     }
+
+    
 }
 
 /* Large screens ----------- */
@@ -662,19 +793,21 @@ and (min-device-width: 1536px) {
     }
 
     #main-left .text-over-photo-container {
-        position: relative;
-        top: -42rem;
-        left: -16vw;
+        position: absolute;
+        margin-left: 0;
+        /* top: -42rem; */
+        left: 50%;
+        bottom: -10vw;
         height: 30vw;
-        width: 100%;
-        max-width: 100vw;
+        width: 60vw;
         z-index: 0;
     }
 
     #main-left .text-over-photo {
-        margin: 0 50vw 0 0;
+        bottom: 30%;
+        margin-right: 50%;
         height: auto;
-        width: 50vw;
+        /* width: 50vw; */
         max-width: max-content;
     }
 
@@ -696,11 +829,11 @@ and (min-device-width: 1536px) {
 
     #main-right {
         height: 100vw;
-        width: 40vw;
+        width: 39vw;
         max-width: 40%;
         position: absolute;
         top: 0;
-        left: 60%;
+        left: 60vw;
     }
 
     #lang-flag {
@@ -719,14 +852,20 @@ and (min-device-width: 1536px) {
         top: 30%;
     }
 
+    #main-right .details-note {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
     #main-right .top-panel {
         width: 100%;
+        height: 100vh;
         top: 0;
         margin-left: 0;
     }
 
     #main-right .right-panel {
-        padding: 7rem 4rem;
+        padding: 8rem 8rem;
         display: flex;
         flex-direction: column;
         font-size: 1.7rem;
@@ -737,9 +876,33 @@ and (min-device-width: 1536px) {
         background-color: black;
     }
 
+    #maps-iframe {
+        margin-top: 20px;
+        width: 600px; 
+        height: 400px;
+    }
+
     #invitation-img {
         width: 100%;
         height: 100%;
+    }
+
+    #details-cont {
+        display: initial;
+        cursor: pointer;
+    }
+    
+    #details-arrow-down {
+        display: initial;
+        position: relative;
+        margin: 0 auto;
+        width: 65px;
+        height: 15px;
+        -webkit-animation: bounce 3s infinite;
+    }
+
+    #details-arrow-down-white {
+        display: none;
     }
 
     #main-right div.separator {
@@ -752,12 +915,19 @@ and (min-device-width: 1536px) {
         padding: 50px;
     }
 
+    .btc-main {
+        top: 20vh;
+    }
+
+    #btc-png {
+        width: 10vw;
+    }
+
     #open-rsvp-button {
         height: 5.5rem;
         font-size: 2rem;
         margin-top: 0;
         width: 30%;
-        background-color: ivory;
         border-radius: 1rem;
         border: 1px solid rgb(61, 61, 61)
     }
@@ -808,8 +978,8 @@ and (min-device-width: 1536px) {
     .rsvp-form input[type="text"], .rsvp-form input[type="number"] {
         padding: 0.5rem 1rem;
         font-size: 1.5rem;
-        font-family: sourcesans;
-        margin: 10px auto;
+        font-family: rosario;
+        margin: 8px auto;
         width: 80%;
         height: 4rem;
         color: rgb(51, 51, 51);
@@ -830,7 +1000,7 @@ and (min-device-width: 1536px) {
     }
 
     .rsvp-form textarea {
-        margin: 10px auto;
+        margin: 8px auto;
         padding: 0.5rem 1rem;
         font-size: 1.5rem;
         width: 80%;
@@ -852,11 +1022,16 @@ and (min-device-width: 1536px) {
 
 /* Fonts */
 @font-face {
-    font-family: sourcesans;
+    font-family: rosario;
     src: url('/static/fonts/SourceSansPro.otf');
 }
 
 @font-face {
-    font-family: parisienne;
-    src: url('/static/fonts/parisienne.ttf');
+    font-family: josefin-sans;
+    src: url('/static/fonts/josefin-sans.ttf');
+}
+
+@font-face {
+    font-family: sophia-bella;
+    src: url('/static/fonts/sophia-bella.ttf');
 }

@@ -27,12 +27,14 @@
 
         <div class="photo-frame">
             {% include 'carousel.html' %}
-                <!-- <img src="{{ url_for('static', filename='photos/DSC_0326.JPG') }}"> -->
         </div>
         <div class="text-over-photo-container">
             <div class="text-over-photo">
-                <div class="names font-parisienne">Destina & Sam</div>
+                <div class="names font-sophbel">Destina & Sam</div>
                 <div class="content" id="subheader-celebrate">are getting married</div>
+                <div id="details-cont-white" onclick="showDetails(this);">
+                    <img id="details-arrow-down-white" src="{{ url_for('static', filename='img/arrow-down-white.png') }}">
+                </div>
             </div>
         </div>
     </div>
@@ -41,49 +43,118 @@
         <div class="top-panel">
             <img id="invitation-img" src="{{ url_for('static', filename='img/invitation.jpg') }}">
             <div class="centered-textbox">
-                <div class="location-title font-parisienne" id="header-location">
+                <div class="location-title font-josefin-sans" id="header-location">
                     Berlin, Germany
                 </div>
                 <div class="date" id="subheader-date">
                     Saturday, 22 August 2020
                 </div>
                 <div class="rsvp-button-container">
-                    <button id="open-rsvp-button" onclick="window.location.href = '/rsvp'">RSVP Here</button>
+                    <button id="open-rsvp-button" onclick="window.location.href='/rsvp'">RSVP Here</button>
+                </div>
+                <div id="details-cont" onclick="showDetails(this);">
+                    <div class="details-note">
+                        Details
+                    </div>
+                    <img id="details-arrow-down" src="{{ url_for('static', filename='img/arrow-down.png') }}">
                 </div>
             </div>
         </div>
 
-        <!-- <div class="separator"></div> -->
 
         <div class="right-panel">
-            <div class="main-header font-parisienne" id="header-schedule">Schedule</div>
-                <p id="p-excited">
-                    We are very excited to celebrate our wedding with you!
-                </p>
-                <p id="p-appreciate">
-                    We would very much appreciate it if you could let us know, by the end of February 2020, whether or not you can make it. All other information, such as time and place, will appear here after that date.
-                </p>
-<!--
-    TODO:
-    # photos
-    # font
-    # RSVP
-    # German
-    # mobile-friendly
-
-    - hamburger?
- -->
-
+            <div class="main-header font-josefin-sans">Location</div>
+            <h3>Oberhafenkantine Berlin</h3>
+            <p class="address">Am Flutgraben 2</p>
+            <p class="address">12435 Berlin</p>
+            <iframe id="maps-iframe" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJl6O0WFROqEcRM-eVnYAc31E&key=AIzaSyBXoBsH2mfwz_J2d1tdsaias3iqnRJwS48" allowfullscreen></iframe> 
         </div>
+
+
+        <div class="separator"></div>
+
+
+        <div class="right-panel">
+            <div class="main-header font-josefin-sans" id="header-faq">FAQ</div>
+            <ol class="faq-ol" type="1">
+                <li class="faq-question" id="p-q2">
+                    When should we aim to arrive?
+                </li>
+                <p class="faq-answer" id="p-a2">
+                    Anytime from 3.30 pm. Please arrive by 4:45 at the latest, as the "official" programme will start at 5. Until then there will be drinks, snacks and chit-chat.
+                </p>
+
+                <li class="faq-question" id="p-q3">
+                    How do we get to and from the location? 
+                </li>
+                <p id="p-a3">
+                    <ul class="pub-tran">
+                        <li>
+                            By public transport: The location lies directly between S-Bahnhof Treptower Park and U-Bahnhof Schlesisches Tor with a 10-minute walk to either. Public transport runs all night at weekends.
+                        </li>
+                        <li>
+                            By shuttle (app): Cheaper alternatives to taxis (that requires signing up) are <a target="_blank" rel="noopener noreferrer" href="https://www.berlkoenig.de/">Berlkönig</a> or <a target="_blank" rel="noopener noreferrer" href="https://www.clevershuttle.de/">CleverShuttle</a>.
+                        </li>
+                        <li>
+                            By car: The location has no parking spaces of its own, but there are usually free spaces on the main road (i.e. Puschkinallee).
+                        </li>
+                        <li>
+                            By taxi: See <a target="_blank" rel="noopener noreferrer" href="https://www.berlin.de/en/public-transportation/1756978-2913840-taxi-phone-numbers-fares-rules.en.html">here</a>.
+                        </li>
+                    </ul>
+                </p>
+
+                <li class="faq-question" id="p-q4">
+                    How long will the celebration last?
+                </li>
+                <p class="faq-answer" id="p-a4">
+                    We can celebrate, dance and sing our hearts out until 4 am. 
+                </p>
+
+                <li class="faq-question" id="p-q5">
+                    What should I wear?
+                </li>
+                <p class="faq-answer" id="p-a5">
+                    There is no dress code. We will be wearing something somwhat different from our usualy daily lives. But this shouldn’t keep you from coming in your trainers if you fancy! Just make sure you’re comfortable and can dance in your clothes (and shoes). Don’t forget that the wedding takes place in summer, which might mean hot weather conditions. 
+                </p>
+        
+                <li class="faq-question" id="p-q6">
+                    Can I bring a +1?
+                </li>
+                <p class="faq-answer" id="p-a6">
+                    The invitations are personalised and are limited to the names written on them. Unfortunately, we don't have the capacity to extend the guest list and appreciate your understanding. 
+                </p>
+        
+                <li class="faq-question" id="p-q7">
+                    By what date do you need an RSVP?
+                </li>
+                <p class="faq-answer" id="p-a7">
+                    We would very much appreciate it if you could let us know, by 22.05.2020, whether you will be able to attend. 
+                </p>
+        
+                <li class="faq-question" id="p-q8">
+                    What about presents? 
+                </li>
+                <p class="faq-answer" id="p-a8">
+                    Seeing our families and friends all together in one place is truly the greatest gift of all for us, as well as the main reason we decided to celebrate in this fashion. However, should you wish to mark the occasion with a gift: A contribution to our (<a href="/btc">digital</a>) savings pot would be greatly appreciated. Thank you! 
+                </p>
+            </ol>
+
+            <p class="one-off-sep">❀ ❀ ❀</p>
+    
+            <p id="more-questions">
+                <b>
+                Do get in touch if you have any more questions! 
+                </b>
+            </p>
+        </div>
+
 
         <div class="separator"></div>
 
         <div class="right-panel">
-            <div class="main-header font-parisienne" id="header-touch">Get in Touch</div>
+            <div class="main-header font-josefin-sans" id="header-touch">Get in Touch</div>
 
-            <p class="centered" id="p-contact">
-                Contact us at:
-            </p>
             <span class="centered">
                 ay-bryson@posteo.net
             </span>

@@ -77,6 +77,18 @@ def rsvp():
         return redirect(url_for('home'))
 
 
+@app.route('/btc', methods=['GET', 'POST'])
+def btc():
+    user_lang = get_language(request)
+    
+    context = {
+        'loc': LOC,
+        'lang': user_lang,
+    }
+
+    return render_template('btc.html', **context)
+
+
 def process_rsvp(form_data):
     try:
         rsvp = form_data.to_dict()

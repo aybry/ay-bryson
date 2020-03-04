@@ -11,7 +11,3 @@ function radioToggleRSVP(val) {
         $("#attendees").attr("type", "hidden").attr("required", false);
     }
 }
-
-// function sendRSVP() {
-//     $("#rsvp-form").submit();
-// }
