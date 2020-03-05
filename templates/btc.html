@@ -7,9 +7,18 @@
 
 </head>
 <body>
+    {% include 'language.html' %}
     <div class="btc-main">
-        <h1 id="digital-savings-pot">We also have a digital savings pot...</h1>
+        <h1 id="digital-savings-pot">We also have a decentralised savings pot...</h1>
         <img id="btc-png" src="{{ url_for('static', filename='img/btc.png') }}">
         <h2><a>BTC: </a>3DSeYWLg5Voxt9uJioBY4m9Dcp94aME6SN</h2>
     </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/i18n.js') }}"></script>
+    <script>
+        const LOC = {{ loc|tojson }};
+        setLanguage('{{ lang }}');
+    </script>
+
+
 </body>

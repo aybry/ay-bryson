@@ -53,7 +53,7 @@
                     <button id="open-rsvp-button" onclick="window.location.href='/rsvp'">RSVP Here</button>
                 </div>
                 <div id="details-cont" onclick="showDetails(this);">
-                    <div class="details-note">
+                    <div class="details-note" id="details-note-hinweis">
                         Details
                     </div>
                     <img id="details-arrow-down" src="{{ url_for('static', filename='img/arrow-down.png') }}">
@@ -63,11 +63,11 @@
 
 
         <div class="right-panel">
-            <div class="main-header font-josefin-sans">Location</div>
+            <div class="main-header font-josefin-sans" id="section-location">Location</div>
             <h3>Oberhafenkantine Berlin</h3>
             <p class="address">Am Flutgraben 2</p>
             <p class="address">12435 Berlin</p>
-            <iframe id="maps-iframe" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJl6O0WFROqEcRM-eVnYAc31E&key=AIzaSyBXoBsH2mfwz_J2d1tdsaias3iqnRJwS48" allowfullscreen></iframe> 
+            <iframe id="maps-iframe" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJl6O0WFROqEcRM-eVnYAc31E&key=AIzaSyBXoBsH2mfwz_J2d1tdsaias3iqnRJwS48" allowfullscreen></iframe>
         </div>
 
 
@@ -81,14 +81,14 @@
                     When should we aim to arrive?
                 </li>
                 <p class="faq-answer" id="p-a2">
-                    Anytime from 3.30 pm. Please arrive by 4:45 at the latest, as the "official" programme will start at 5. Until then there will be drinks, snacks and chit-chat.
+                    Anytime between 3.30 and 4:45 pm. Please arrive by 4:45 at the latest, as the "official" programme will start at 5. Until then there will be drinks, snacks and chit-chat.
                 </p>
 
                 <li class="faq-question" id="p-q3">
-                    How do we get to and from the location? 
+                    How do we get to and from the location?
                 </li>
-                <p id="p-a3">
-                    <ul class="pub-tran">
+                <p>
+                    <ul class="pub-tran" id="p-a3">
                         <li>
                             By public transport: The location lies directly between S-Bahnhof Treptower Park and U-Bahnhof Schlesisches Tor with a 10-minute walk to either. Public transport runs all night at weekends.
                         </li>
@@ -108,43 +108,43 @@
                     How long will the celebration last?
                 </li>
                 <p class="faq-answer" id="p-a4">
-                    We can celebrate, dance and sing our hearts out until 4 am. 
+                    We can celebrate, dance and sing our hearts out until 4 am.
                 </p>
 
                 <li class="faq-question" id="p-q5">
                     What should I wear?
                 </li>
                 <p class="faq-answer" id="p-a5">
-                    There is no dress code. We will be wearing something somwhat different from our usualy daily lives. But this shouldn’t keep you from coming in your trainers if you fancy! Just make sure you’re comfortable and can dance in your clothes (and shoes). Don’t forget that the wedding takes place in summer, which might mean hot weather conditions. 
+                    There is no dress code. We will be wearing something somwhat different from our usualy daily lives. But this shouldn’t keep you from coming in your trainers if you fancy! Just make sure you’re comfortable and can dance in your clothes (and shoes). Don’t forget that the wedding takes place in summer, which might mean hot weather conditions.
                 </p>
-        
+
                 <li class="faq-question" id="p-q6">
                     Can I bring a +1?
                 </li>
                 <p class="faq-answer" id="p-a6">
-                    The invitations are personalised and are limited to the names written on them. Unfortunately, we don't have the capacity to extend the guest list and appreciate your understanding. 
+                    The invitations are personalised and are limited to the names written on them. Unfortunately, we don't have the capacity to extend the guest list and appreciate your understanding.
                 </p>
-        
+
                 <li class="faq-question" id="p-q7">
                     By what date do you need an RSVP?
                 </li>
                 <p class="faq-answer" id="p-a7">
-                    We would very much appreciate it if you could let us know, by 22.05.2020, whether you will be able to attend. 
+                    We would very much appreciate it if you could let us know, by 22.05.2020, whether you will be able to attend.
                 </p>
-        
+
                 <li class="faq-question" id="p-q8">
-                    What about presents? 
+                    What about presents?
                 </li>
                 <p class="faq-answer" id="p-a8">
-                    Seeing our families and friends all together in one place is truly the greatest gift of all for us, as well as the main reason we decided to celebrate in this fashion. However, should you wish to mark the occasion with a gift: A contribution to our (<a href="/btc">decentralised</a>) savings pot would be greatly appreciated. Thank you! 
+                    Seeing our families and friends all together in one place is truly the greatest gift of all for us, as well as the main reason we decided to celebrate in this fashion. However, should you wish to mark the occasion with a gift: A contribution to our savings pot (or our <a href="/btc">alternative</a> savings pot) would be greatly appreciated. Thank you!
                 </p>
             </ol>
 
             <p class="one-off-sep">❀ ❀ ❀</p>
-    
+
             <p id="more-questions">
                 <b>
-                Do get in touch if you have any more questions! 
+                Do get in touch if you have any more questions!
                 </b>
             </p>
         </div>

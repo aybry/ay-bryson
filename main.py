@@ -80,7 +80,7 @@ def rsvp():
 @app.route('/btc', methods=['GET', 'POST'])
 def btc():
     user_lang = get_language(request)
-    
+
     context = {
         'loc': LOC,
         'lang': user_lang,

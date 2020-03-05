@@ -209,6 +209,7 @@ a {
 }
 
 #maps-iframe {
+    margin-top: 20px;
     width: 90vw; 
     height: 60vw;
     max-width: 100%;
@@ -424,6 +425,9 @@ and (max-device-width: 480px) {
         font-size: 10rem;
     }
 
+    .get-in-touch-panel {
+        padding-bottom: 0;
+    }
 }
 
 /* iPads ----------- */
@@ -568,6 +572,13 @@ and (max-device-width: 1023px) {
         font-size: 2rem;
     }
 
+    .get-in-touch-panel {
+        padding-bottom: 0;
+    }
+
+    #btc-png {
+        width: 20vw;
+    }
 }
 
 
@@ -795,7 +806,9 @@ and (max-device-width: 1535px) {
         font-size: 4rem;
     }
 
-    
+    .get-in-touch-panel {
+        padding-bottom: 0;
+    }
 }
 
 /* Large screens ----------- */
@@ -892,7 +905,6 @@ and (min-device-width: 1536px) {
     }
 
     #maps-iframe {
-        margin-top: 20px;
         width: 600px; 
         height: 400px;
     }
@@ -1033,8 +1045,6 @@ and (min-device-width: 1536px) {
     }
 
     .get-in-touch-panel {
-        display: block;
-        margin: auto;
         padding-bottom: 0;
     }
 }

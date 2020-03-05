@@ -1,6 +1,6 @@
 subheader-celebrate
-en:are getting married
-de:heiraten
+en:are getting married!
+de:heiraten!
 
 header-location
 en:Berlin, Germany
@@ -14,25 +14,9 @@ open-rsvp-button
 en:RSVP Here
 de:Zu- oder absagen
 
-header-schedule
-en:Schedule
-de:Ablauf
-
-p-excited
-en:We are very excited to celebrate our wedding with you!
-de:Wir freuen uns riesig, unsere Hochzeit gemeinsam mit euch zu feiern! 
-
-p-appreciate
-en:We would very much appreciate it if you could let us know, by 22 May 2020, whether you can make it. All other information, such as time and place, will appear here after that date.
-de:Wir bitten um eine Zu- oder Absage bis zum 22. Mai 2020. Alle Details zum Ablauf, wie Zeit und Ort, werden wir nach diesem Datum hier bekanntgeben. 
-
 header-touch
 en:Get in Touch
 de:Kontaktiert uns
-
-p-contact
-en:Contact us at:
-de:Kontakt:
 
 rsvp-location
 en:Berlin, Germany
@@ -48,7 +32,7 @@ de:Name(n)
 
 email::placeholder
 en:Email address
-de:Emailadresse 
+de:Emailadresse
 
 rsvp-radio-yes
 en:Attending
@@ -69,3 +53,75 @@ de:Nachricht (optional)
 rsvp-submit
 en:Submit
 de:Absenden
+
+details-note-hinweis
+en:Details
+de:Mehr Infos
+
+section-location
+en:Location
+de:Location
+
+p-q2
+en:When should we aim to arrive?
+de:Um wie viel Uhr sollten wir ankommen?
+
+p-a2
+en:Anytime between 3.30 and 4:45 pm. Please arrive by 4:45 at the latest, as the "official" programme will start at 5. Until then there will be drinks, snacks and chit-chat.
+de:Ab 15:30 Uhr. Bitte seid bis spätestens 16:45 Uhr da, denn um 17 Uhr geht das “offizielle" Programm los. Vorher gibt’s Drinks und Snacks.
+
+p-q3
+en:How do we get to and from the location?
+de:An- und Abfahrt
+
+p-a3
+en:<li>By public transport: The location lies directly between S-Bahnhof Treptower Park and U-Bahnhof Schlesisches Tor with a 10-minute walk to either. Public transport runs all night at weekends.</li><li>By shuttle (app): Cheaper alternatives to taxis (that requires signing up) are <a target="_blank" rel="noopener noreferrer" href="https://www.berlkoenig.de/">Berlkönig</a> or <a target="_blank" rel="noopener noreferrer" href="https://www.clevershuttle.de/">CleverShuttle</a>.</li><li>By car: The location has no parking spaces of its own, but there are usually free spaces on the main road (i.e. Puschkinallee).</li><li>By taxi: See <a target="_blank" rel="noopener noreferrer" href="https://www.berlin.de/en/public-transportation/1756978-2913840-taxi-phone-numbers-fares-rules.en.html">here</a>.</li>
+de:<li>Mit öffentlichen Verkehrsmitteln: Die Location liegt ca. 10 Minuten fußläufig zwischen S-Bhf Treptower Park und U-Bhf Schlesisches Tor. Die öffentlichen Verkehrsmittel fahren die ganze Nacht durch am Wochenende.</li><li>Mit Shuttle (App): Günstigere Alternativen zu Taxis (die eine Anmeldung erfordern) sind <a target="_blank" rel="noopener noreferrer" href="https://www.berlkoenig.de/">Berlkönig</a> oder <a target="_blank" rel="noopener noreferrer" href="https://www.clevershuttle.de/">CleverShuttle</a>.</li><li>Mit Auto: Die Location selbst hat keine verfügbaren Parkplätze, aber es sollte genügend freie Parkplätze auf der Hauptstraße (Puschkinallee) oder in der Umgebung geben.</li><li>Mit Taxi: Siehe <a target="_blank" rel="noopener noreferrer" href="https://www.berlin.de/en/public-transportation/1756978-2913840-taxi-phone-numbers-fares-rules.en.html">hier</a>.</li>
+
+p-q4
+en:How long will the celebration last?
+de:Wie lange geht die Feier?
+
+p-a4
+en:Come with lots of energy; we have the venue until 4 am!
+de:Bringt viel Energie mit, da wir bis 4 Uhr morgens feiern können!
+
+p-q5
+en:What should I wear?
+de:Was sollte ich anziehen?
+
+p-a5
+en:There is no dress code. We will be wearing something somwhat different from our usualy daily lives. But this shouldn’t keep you from coming in your trainers if you fancy! Just make sure you’re comfortable and can dance in your clothes (and shoes). Don’t forget that the wedding takes place in summer, which might mean hot weather conditions.
+de:Es gibt keinen Dresscode. Wir werden uns etwas anders kleiden als sonst. Das sollte euch aber nicht davon abhalten, in euren Sneakern zu kommen, wenn ihr das wollt! Hauptsache, ihr fühlt euch wohl und ihr könnt gut in euren Klamotten (und Schuhen) tanzen. Bedenkt, dass die Hochzeit im Sommer stattfindet und es entsprechend warm werden kann.
+
+p-q6
+en:Can I bring a +1?
+de:Kann ich ein +1 mitbringen?
+
+p-a6
+en:The invitations are personalised and are limited to the names written on them. Unfortunately, we don't have the capacity to extend the guest list and appreciate your understanding.
+de:Die Einladung ist personalisiert und begrenzt sich auf die Namen, die auf der Einladung stehen. Leider können wir die Gästeliste nicht erweitern und hoffen auf euer Verständnis!
+
+p-q7
+en:By what date do you need an RSVP?
+de:Bis wann soll ich zu- oder absagen?
+
+p-a7
+en:We would very much appreciate it if you could let us know, by 22.05.2020, whether you will be able to attend.
+de:Bitte gebt uns bis 22.05.2020 Bescheid, ob ihr kommen könnt oder nicht.
+
+p-q8
+en:What about presents?
+de:Was ist mit Geschenken?
+
+p-a8
+en:Seeing our families and friends all together in one place is truly the greatest gift of all for us, as well as the main reason we decided to celebrate in this fashion. However, should you wish to mark the occasion with a gift: A contribution to our savings pot (or our <a href="/btc">alternative</a> savings pot) would be greatly appreciated. Thank you!
+de:Unsere Familien und Freunde alle beisamen an einem Ort zu sehen, ist wirklich das schönste Geschenk für uns, und auch der Grund, aus dem wir uns für eine solche Feier entschieden haben. Falls ihr aber dennoch ein Geschenk machen wollt, so wären wir über einen Beitrag in unsere "Sparbüchse" (oder unsere <a href="/btc">alternative</a> Sparbüchse) sehr dankbar.
+
+more-questions
+en:Do get in touch if you have any more questions!
+de:Bei weiteren Fragen könnt ihr euch jederzeit an uns wenden!
+
+digital-savings-pot
+en:We also have a decentralised savings pot...
+de:Wir haben auch eine dezentralisierte Sparbüchse...

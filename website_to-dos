@@ -1,9 +1,13 @@
 (Y) By public transport (etc.) bullet points, separate, etc.
 (Y) Add google maps to OHK
 (Y) Presents section
-- Countdown (or something else?)
-- Lilies @ Get in touch
+    (N) Countdown
+(Y) Lilies @ Get in touch
 (Y) Pixel between website main image and "Berlin, Germany [...]"
 (Y) Q1 out and into schedule
 
-(- Raise a little: 'Berlin, Germany \n Saturday [...]')
+(Y) Finish i18n for new Q&A
+(Y) Is BTC part OK?
+(Y) 'Anytime from 3.30 pm. Please arrive by 4:45 at the latest'
+- Keep language when pressed once
+- Make carousel smoother
