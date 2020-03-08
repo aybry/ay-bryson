@@ -6,6 +6,7 @@ import urllib3
 import string
 import random
 
+from subprocess import check_output
 from flask import Flask, flash, url_for, render_template, request, redirect
 from gcloud import storage
 from pprint import pprint
@@ -200,7 +201,14 @@ if __name__ == '__main__':
     if PRODUCTION:
         app.run()
     else:
-        app.run(
-            debug=True,
-            host='0.0.0.0',
-        )
+        try:
+            app.run(
+                debug=True,
+                host='0.0.0.0',
+            )
+        except OSError:
+            prcs = [prc.split() for prc in check_output(['ps', '-fA']).split('\\n')]
+            print('Socket error!')
+            # get python main.py process
+            # kill said process.
+            # Then run again!

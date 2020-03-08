@@ -65,7 +65,7 @@ a {
 }
 
 #lang-select {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     top: 30px;
     right: 30px;
@@ -96,6 +96,8 @@ a {
 
 #details-cont {
     display: none;
+    position: relative;
+    bottom: 10%;
     cursor: pointer;
 }
 
@@ -681,6 +683,7 @@ and (max-device-width: 1535px) {
 
     #details-cont {
         display: initial;
+        bottom: 20%;
         cursor: pointer;
     }
     
@@ -688,8 +691,8 @@ and (max-device-width: 1535px) {
         display: initial;
         position: relative;
         margin: 0 auto;
-        width: 65px;
-        height: 15px;
+        width: 30px;
+        height: 8px;
         -webkit-animation: bounce 3s infinite;
     }
 
@@ -714,6 +717,14 @@ and (max-device-width: 1535px) {
         width: 30%;
         border-radius: 1rem;
         border: 1px solid rgb(61, 61, 61)
+    }
+
+    .btc-main {
+        top: 20vh;
+    }
+
+    #btc-png {
+        width: 10vw;
     }
 
     .flash {
@@ -923,8 +934,8 @@ and (min-device-width: 1536px) {
         display: initial;
         position: relative;
         margin: 0 auto;
-        width: 65px;
-        height: 15px;
+        width: 40px;
+        height: 10px;
         -webkit-animation: bounce 3s infinite;
     }
 

@@ -68,7 +68,7 @@ de:Um wie viel Uhr sollten wir ankommen?
 
 p-a2
 en:Anytime between 3.30 and 4:45 pm. Please arrive by 4:45 at the latest, as the "official" programme will start at 5. Until then there will be drinks, snacks and chit-chat.
-de:Ab 15:30 Uhr. Bitte seid bis spätestens 16:45 Uhr da, denn um 17 Uhr geht das “offizielle" Programm los. Vorher gibt’s Drinks und Snacks.
+de:Zwischen 15:30 und 16:45 Uhr. Bitte seid bis spätestens 16:45 Uhr da, denn um 17 Uhr geht das “offizielle" Programm los. Vorher gibt’s Drinks und Snacks.
 
 p-q3
 en:How do we get to and from the location?
@@ -91,7 +91,7 @@ en:What should I wear?
 de:Was sollte ich anziehen?
 
 p-a5
-en:There is no dress code. We will be wearing something somwhat different from our usualy daily lives. But this shouldn’t keep you from coming in your trainers if you fancy! Just make sure you’re comfortable and can dance in your clothes (and shoes). Don’t forget that the wedding takes place in summer, which might mean hot weather conditions.
+en:There is no dress code. We will be wearing something somwhat different from our usual daily lives. But this shouldn’t keep you from coming in your trainers if you fancy! Just make sure you’re comfortable and can dance in your clothes (and shoes). Don’t forget that the wedding takes place in summer, which might mean hot weather conditions.
 de:Es gibt keinen Dresscode. Wir werden uns etwas anders kleiden als sonst. Das sollte euch aber nicht davon abhalten, in euren Sneakern zu kommen, wenn ihr das wollt! Hauptsache, ihr fühlt euch wohl und ihr könnt gut in euren Klamotten (und Schuhen) tanzen. Bedenkt, dass die Hochzeit im Sommer stattfindet und es entsprechend warm werden kann.
 
 p-q6
@@ -100,7 +100,7 @@ de:Kann ich ein +1 mitbringen?
 
 p-a6
 en:The invitations are personalised and are limited to the names written on them. Unfortunately, we don't have the capacity to extend the guest list and appreciate your understanding.
-de:Die Einladung ist personalisiert und begrenzt sich auf die Namen, die auf der Einladung stehen. Leider können wir die Gästeliste nicht erweitern und hoffen auf euer Verständnis!
+de:Die Einladung ist personalisiert und begrenzt sich auf die Namen, die auf der Einladung stehen. Leider haben wir nicht die Kapazität, die Gästeliste zu erweitern und hoffen auf euer Verständnis!
 
 p-q7
 en:By what date do you need an RSVP?
@@ -108,7 +108,7 @@ de:Bis wann soll ich zu- oder absagen?
 
 p-a7
 en:We would very much appreciate it if you could let us know, by 22.05.2020, whether you will be able to attend.
-de:Bitte gebt uns bis 22.05.2020 Bescheid, ob ihr kommen könnt oder nicht.
+de:Wir würden uns sehr freuen, wenn ihr bis 22.05.2020 Bescheid geben könntet, ob ihr kommen könnt.
 
 p-q8
 en:What about presents?
